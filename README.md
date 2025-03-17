@@ -8,6 +8,15 @@ Before ES6, JavaScript used constructor functions and the prototype chain to sim
 
 ES6 introduced the `class` keyword, making object-oriented programming in JavaScript more familiar and readable. However, it is important to note that JavaScript classes are essentially syntactic sugar over the existing prototype-based inheritance model.
 
+## Why Is Object-Oriented Programming (OOP) Useful?
+Object-oriented programming is a widely used paradigm in software development due to its many benefits:
+- **Modularity**: Code is divided into reusable components, making it easier to manage and maintain.
+- **Reusability**: Objects and classes can be reused in different parts of an application or across multiple projects.
+- **Encapsulation**: Data and methods are bundled together, helping to protect and control data access.
+- **Abstraction**: Complex logic is hidden behind well-defined interfaces, reducing complexity for developers.
+- **Inheritance**: Allows new classes to derive properties and behaviors from existing classes, reducing code duplication.
+- **Scalability**: OOP principles help manage large codebases efficiently, making it easier to add new features over time.
+
 ## What Can JavaScript Classes Do?
 JavaScript classes allow developers to:
 - Create reusable blueprints for objects.
