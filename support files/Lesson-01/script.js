@@ -1,11 +1,15 @@
 class Person {
+    constructor(name, age, gender, skills) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.skills = skills;
+    }
 
-    
-// This class definition needs to be filled in using
-// the Advanced Code Screenshot
-
-
-
+    introduce() {
+        return `Hi, my name is ${this.name}. I am ${this.age} years old and identify as ${this.gender}. 
+        I have skills in: ${this.skills.length > 0 ? this.skills.join(", ") : "None"}.`;
+    }
 }
 
 function createPerson() {

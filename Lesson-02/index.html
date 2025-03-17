@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Classes Demo</title>
+    <title>JavaScript Classes - Lesson 2</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,9 +22,7 @@
             text-align: left;
         }
 
-        input,
-        select,
-        button {
+        input, select, button {
             display: block;
             margin: 10px 0;
             padding: 8px;
@@ -40,8 +37,7 @@
             margin-top: 10px;
         }
 
-        .radio-group,
-        .checkbox-group {
+        .radio-group, .checkbox-group {
             display: flex;
             flex-direction: column;
             gap: 5px;
@@ -58,10 +54,8 @@
         .radio-group .radio-item label,
         .checkbox-group .checkbox-item label {
             width: 150px;
-            /* Fix the label width */
             text-align: left;
         }
-
 
         .radio-group .radio-item input,
         .checkbox-group .checkbox-item input {
@@ -90,16 +84,18 @@
         }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <h1>JavaScript Classes in Action</h1>
+        <h1>JavaScript Classes - Lesson 2</h1>
 
         <label for="name">Enter Name:</label>
         <input type="text" id="name" placeholder="Enter your name">
 
         <label for="age">Enter Age:</label>
         <input type="number" id="age" placeholder="Enter your age">
+
+        <label for="job">Enter Job Title:</label>
+        <input type="text" id="job" placeholder="Enter your job title">
 
         <label>Gender:</label>
         <div class="radio-group">
@@ -133,13 +129,12 @@
             </div>
         </div>
 
-        <button onclick="createPerson()">Create Person</button>
+        <button onclick="createEmployee()">Create Employee</button>
 
-        <h2>Person Details:</h2>
+        <h2>Employee Details:</h2>
         <p id="personOutput" class="output"></p>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
