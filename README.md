@@ -8,6 +8,20 @@ Before ES6, JavaScript used constructor functions and the prototype chain to sim
 
 ES6 introduced the `class` keyword, making object-oriented programming in JavaScript more familiar and readable. However, it is important to note that JavaScript classes are essentially syntactic sugar over the existing prototype-based inheritance model.
 
+## What Can JavaScript Classes Do?
+JavaScript classes allow developers to:
+- Create reusable blueprints for objects.
+- Define constructors to initialize object properties.
+- Implement instance methods and static methods.
+- Extend other classes using inheritance.
+- Use getters and setters for controlled property access.
+
+## Why Are JavaScript Classes Useful?
+- **Improved Readability**: The `class` syntax makes object-oriented code more structured and easier to understand.
+- **Encapsulation**: Class-based syntax supports private fields and methods, making data hiding and encapsulation easier.
+- **Inheritance**: The `extends` keyword allows developers to create subclasses, improving code reusability.
+- **Consistency**: Provides a more standardized way of defining object-oriented structures in JavaScript.
+
 ## Why Is Object-Oriented Programming (OOP) Useful?
 Object-oriented programming is a widely used paradigm in software development due to its many benefits:
 - **Modularity**: Code is divided into reusable components, making it easier to manage and maintain.
@@ -96,67 +110,11 @@ Before Promises became widely used, developers relied heavily on jQuery's `$.aja
 - Promises are built into modern JavaScript and are widely supported without dependencies.
 - jQuery AJAX requires an external library, which may not be ideal for lightweight applications.
 
-#### Example: jQuery AJAX vs Promises
-**Using jQuery AJAX:**
-```javascript
-$.ajax({
-  url: "https://api.example.com/data",
-  method: "GET",
-})
-  .done((data) => {
-    console.log("Data received:", data);
-  })
-  .fail((error) => {
-    console.error("Error fetching data:", error);
-  });
-```
-
-**Using Fetch API with Promises:**
-```javascript
-fetch("https://api.example.com/data")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log("Data received:", data);
-  })
-  .catch((error) => {
-    console.error("Error fetching data:", error);
-  });
-```
-
-**Using `async/await`:**
-```javascript
-async function getData() {
-  try {
-    const response = await fetch("https://api.example.com/data");
-    const data = await response.json();
-    console.log("Data received:", data);
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-}
-
-getData();
-```
-
 ### Best Practices for Using Promises
 - Always handle errors using `.catch()` or `try/catch` with `async/await`.
 - Avoid unnecessary nesting; use chaining or `async/await`.
 - Use `Promise.all()` when multiple promises should be executed in parallel.
 - Use `Promise.race()` if you need the fastest result from multiple asynchronous operations.
-
-## What Can JavaScript Classes Do?
-JavaScript classes allow developers to:
-- Create reusable blueprints for objects.
-- Define constructors to initialize object properties.
-- Implement instance methods and static methods.
-- Extend other classes using inheritance.
-- Use getters and setters for controlled property access.
-
-## Why Are JavaScript Classes Useful?
-- **Improved Readability**: The `class` syntax makes object-oriented code more structured and easier to understand.
-- **Encapsulation**: Class-based syntax supports private fields and methods, making data hiding and encapsulation easier.
-- **Inheritance**: The `extends` keyword allows developers to create subclasses, improving code reusability.
-- **Consistency**: Provides a more standardized way of defining object-oriented structures in JavaScript.
 
 This document will be expanded as we progress through the lesson, covering advanced concepts and best practices related to JavaScript classes and JSON.
 
