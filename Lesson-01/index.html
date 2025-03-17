@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Classes Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        input, select, button {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 150px; /* Fixed width for labels */
+            cursor: pointer;
+        }
+
+        .radio-group input,
+        .checkbox-group input {
+            margin: 0;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+            width: 100%;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .output {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Classes in Action</h1>
+
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="age">Enter Age:</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <label>Gender:</label>
+        <div class="radio-group">
+            <label>Male <input type="radio" name="gender" value="Male" id="male"></label>
+            <label>Female <input type="radio" name="gender" value="Female" id="female"></label>
+            <label>Other <input type="radio" name="gender" value="Other" id="other"></label>
+        </div>
+
+        <label>Skills:</label>
+        <div class="checkbox-group">
+            <label>JavaScript <input type="checkbox" id="js" value="JavaScript"></label>
+            <label>HTML <input type="checkbox" id="html" value="HTML"></label>
+            <label>CSS <input type="checkbox" id="css" value="CSS"></label>
+        </div>
+
+        <button onclick="createPerson()">Create Person</button>
+
+        <h2>Person Details:</h2>
+        <p id="personOutput" class="output"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
