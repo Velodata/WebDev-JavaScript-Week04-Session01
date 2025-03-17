@@ -39,7 +39,8 @@ function createEmployee() {
         return;
     }
 
-    const employee = new Employee(name, age, selectedGender, selectedSkills, jobTitle);
+    const employeev1 = new Employee(name, age, selectedGender, selectedSkills, jobTitle);
+    const employeev2 = new Employee(name, age, selectedGender, selectedSkills, jobTitle);
     
     document.getElementById("personOutput").innerText = employee.introduce();
 }
